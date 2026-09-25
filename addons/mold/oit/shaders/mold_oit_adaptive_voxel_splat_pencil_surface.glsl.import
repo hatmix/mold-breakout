@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://dg6456d14akhs"
+path="res://.godot/imported/mold_oit_adaptive_voxel_splat_pencil_surface.glsl-530f86294597cb31bfbddebe5c80948e.res"
+
+[deps]
+
+source_file="res://addons/mold/oit/shaders/mold_oit_adaptive_voxel_splat_pencil_surface.glsl"
+dest_files=["res://.godot/imported/mold_oit_adaptive_voxel_splat_pencil_surface.glsl-530f86294597cb31bfbddebe5c80948e.res"]
+
+[params]
+

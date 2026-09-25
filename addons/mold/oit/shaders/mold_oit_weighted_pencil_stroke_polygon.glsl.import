@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://ukd4637vy6hu"
+path="res://.godot/imported/mold_oit_weighted_pencil_stroke_polygon.glsl-c2c7f7f8025d93637b7e78d86af277b0.res"
+
+[deps]
+
+source_file="res://addons/mold/oit/shaders/mold_oit_weighted_pencil_stroke_polygon.glsl"
+dest_files=["res://.godot/imported/mold_oit_weighted_pencil_stroke_polygon.glsl-c2c7f7f8025d93637b7e78d86af277b0.res"]
+
+[params]
+

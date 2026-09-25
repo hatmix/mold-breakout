@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://ctr0e604552lu"
+path="res://.godot/imported/mold_oit_adaptive_voxel_shade_pencil_stroke_polygon.glsl-afcf94947e315e024f2c33179be2591f.res"
+
+[deps]
+
+source_file="res://addons/mold/oit/shaders/mold_oit_adaptive_voxel_shade_pencil_stroke_polygon.glsl"
+dest_files=["res://.godot/imported/mold_oit_adaptive_voxel_shade_pencil_stroke_polygon.glsl-afcf94947e315e024f2c33179be2591f.res"]
+
+[params]
+

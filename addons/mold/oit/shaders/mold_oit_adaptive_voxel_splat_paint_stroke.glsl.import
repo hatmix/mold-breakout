@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://bciumm0gj3b1t"
+path="res://.godot/imported/mold_oit_adaptive_voxel_splat_paint_stroke.glsl-e6c8a0710370015ef168bfccd912f3a1.res"
+
+[deps]
+
+source_file="res://addons/mold/oit/shaders/mold_oit_adaptive_voxel_splat_paint_stroke.glsl"
+dest_files=["res://.godot/imported/mold_oit_adaptive_voxel_splat_paint_stroke.glsl-e6c8a0710370015ef168bfccd912f3a1.res"]
+
+[params]
+

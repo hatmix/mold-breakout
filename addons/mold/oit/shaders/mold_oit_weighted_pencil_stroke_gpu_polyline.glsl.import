@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://dge75gbw10wds"
+path="res://.godot/imported/mold_oit_weighted_pencil_stroke_gpu_polyline.glsl-e15d9b03e05e6327bef13efb11377033.res"
+
+[deps]
+
+source_file="res://addons/mold/oit/shaders/mold_oit_weighted_pencil_stroke_gpu_polyline.glsl"
+dest_files=["res://.godot/imported/mold_oit_weighted_pencil_stroke_gpu_polyline.glsl-e15d9b03e05e6327bef13efb11377033.res"]
+
+[params]
+

@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://uifxiqy5xvkr"
+path="res://.godot/imported/mold_oit_adaptive_voxel_map.glsl-78789da5700802ed92814178fcf26136.res"
+
+[deps]
+
+source_file="res://addons/mold/oit/shaders/mold_oit_adaptive_voxel_map.glsl"
+dest_files=["res://.godot/imported/mold_oit_adaptive_voxel_map.glsl-78789da5700802ed92814178fcf26136.res"]
+
+[params]
+

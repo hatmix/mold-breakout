@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://e1ukqk7mbxav"
+path="res://.godot/imported/mold_oit_composite_msaa.glsl-404920b23621c68f67762d273649303e.res"
+
+[deps]
+
+source_file="res://addons/mold/oit/shaders/mold_oit_composite_msaa.glsl"
+dest_files=["res://.godot/imported/mold_oit_composite_msaa.glsl-404920b23621c68f67762d273649303e.res"]
+
+[params]
+

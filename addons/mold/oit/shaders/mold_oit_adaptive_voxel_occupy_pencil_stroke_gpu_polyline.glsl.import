@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://ctmf7bbb8ijqf"
+path="res://.godot/imported/mold_oit_adaptive_voxel_occupy_pencil_stroke_gpu_polyline.glsl-15672f106fc64a1f0f0ba0ed22648769.res"
+
+[deps]
+
+source_file="res://addons/mold/oit/shaders/mold_oit_adaptive_voxel_occupy_pencil_stroke_gpu_polyline.glsl"
+dest_files=["res://.godot/imported/mold_oit_adaptive_voxel_occupy_pencil_stroke_gpu_polyline.glsl-15672f106fc64a1f0f0ba0ed22648769.res"]
+
+[params]
+

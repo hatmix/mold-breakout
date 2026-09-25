@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://vgwdq25ayn5q"
+path="res://.godot/imported/mold_oit_prepare_transforms.glsl-0908b3348a4b99e2d7649f3f8b122ea2.res"
+
+[deps]
+
+source_file="res://addons/mold/oit/shaders/mold_oit_prepare_transforms.glsl"
+dest_files=["res://.godot/imported/mold_oit_prepare_transforms.glsl-0908b3348a4b99e2d7649f3f8b122ea2.res"]
+
+[params]
+

@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://bsbd02oks6jlf"
+path="res://.godot/imported/mold_oit_adaptive_voxel_splat_pencil_stroke_gpu_polyline.glsl-5e70e41251bd7a8f6a4718f331f64068.res"
+
+[deps]
+
+source_file="res://addons/mold/oit/shaders/mold_oit_adaptive_voxel_splat_pencil_stroke_gpu_polyline.glsl"
+dest_files=["res://.godot/imported/mold_oit_adaptive_voxel_splat_pencil_stroke_gpu_polyline.glsl-5e70e41251bd7a8f6a4718f331f64068.res"]
+
+[params]
+

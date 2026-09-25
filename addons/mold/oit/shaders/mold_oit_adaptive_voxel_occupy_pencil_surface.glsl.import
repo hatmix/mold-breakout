@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://55xx8kfbcxll"
+path="res://.godot/imported/mold_oit_adaptive_voxel_occupy_pencil_surface.glsl-c0485accf6a07cca43d57922b82f70fd.res"
+
+[deps]
+
+source_file="res://addons/mold/oit/shaders/mold_oit_adaptive_voxel_occupy_pencil_surface.glsl"
+dest_files=["res://.godot/imported/mold_oit_adaptive_voxel_occupy_pencil_surface.glsl-c0485accf6a07cca43d57922b82f70fd.res"]
+
+[params]
+

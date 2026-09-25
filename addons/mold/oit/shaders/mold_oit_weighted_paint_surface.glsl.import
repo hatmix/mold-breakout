@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://dcxdxmcquio26"
+path="res://.godot/imported/mold_oit_weighted_paint_surface.glsl-1c9c69511a1c9d976f6fe5ab5fdf7013.res"
+
+[deps]
+
+source_file="res://addons/mold/oit/shaders/mold_oit_weighted_paint_surface.glsl"
+dest_files=["res://.godot/imported/mold_oit_weighted_paint_surface.glsl-1c9c69511a1c9d976f6fe5ab5fdf7013.res"]
+
+[params]
+

@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://c2gvkv471sgnf"
+path="res://.godot/imported/mold_oit_weighted_msaa.glsl-a2a3170d10cb79a62204a27a5495df65.res"
+
+[deps]
+
+source_file="res://addons/mold/oit/shaders/mold_oit_weighted_msaa.glsl"
+dest_files=["res://.godot/imported/mold_oit_weighted_msaa.glsl-a2a3170d10cb79a62204a27a5495df65.res"]
+
+[params]
+

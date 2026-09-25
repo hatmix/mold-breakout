@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://d2aby6lrmr6qi"
+path="res://.godot/imported/mold_oit_adaptive_voxel_occupy_paint_stroke_gpu_polyline.glsl-dbd2286fe6b22ee42649e7894b6bb58a.res"
+
+[deps]
+
+source_file="res://addons/mold/oit/shaders/mold_oit_adaptive_voxel_occupy_paint_stroke_gpu_polyline.glsl"
+dest_files=["res://.godot/imported/mold_oit_adaptive_voxel_occupy_paint_stroke_gpu_polyline.glsl-dbd2286fe6b22ee42649e7894b6bb58a.res"]
+
+[params]
+

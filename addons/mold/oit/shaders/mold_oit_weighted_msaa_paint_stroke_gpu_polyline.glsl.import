@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://c6xjbhjnj0rsv"
+path="res://.godot/imported/mold_oit_weighted_msaa_paint_stroke_gpu_polyline.glsl-8219c234eee2fb1579a3eda6805922f8.res"
+
+[deps]
+
+source_file="res://addons/mold/oit/shaders/mold_oit_weighted_msaa_paint_stroke_gpu_polyline.glsl"
+dest_files=["res://.godot/imported/mold_oit_weighted_msaa_paint_stroke_gpu_polyline.glsl-8219c234eee2fb1579a3eda6805922f8.res"]
+
+[params]
+

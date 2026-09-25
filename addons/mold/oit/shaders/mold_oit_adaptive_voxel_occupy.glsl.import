@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://d0jiqaha58y5s"
+path="res://.godot/imported/mold_oit_adaptive_voxel_occupy.glsl-d245f37267380b86cac28647056e3991.res"
+
+[deps]
+
+source_file="res://addons/mold/oit/shaders/mold_oit_adaptive_voxel_occupy.glsl"
+dest_files=["res://.godot/imported/mold_oit_adaptive_voxel_occupy.glsl-d245f37267380b86cac28647056e3991.res"]
+
+[params]
+

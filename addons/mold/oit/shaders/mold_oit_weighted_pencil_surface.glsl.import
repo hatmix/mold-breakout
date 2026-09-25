@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://dyfx4pjm70cbo"
+path="res://.godot/imported/mold_oit_weighted_pencil_surface.glsl-a27b95ec69db0a2ba5382765fc693970.res"
+
+[deps]
+
+source_file="res://addons/mold/oit/shaders/mold_oit_weighted_pencil_surface.glsl"
+dest_files=["res://.godot/imported/mold_oit_weighted_pencil_surface.glsl-a27b95ec69db0a2ba5382765fc693970.res"]
+
+[params]
+

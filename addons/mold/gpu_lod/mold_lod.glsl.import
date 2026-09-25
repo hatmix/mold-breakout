@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://0oni0kakx1ad"
+path="res://.godot/imported/mold_lod.glsl-47fa2f4efd7e21995d90ce07685c4afe.res"
+
+[deps]
+
+source_file="res://addons/mold/gpu_lod/mold_lod.glsl"
+dest_files=["res://.godot/imported/mold_lod.glsl-47fa2f4efd7e21995d90ce07685c4afe.res"]
+
+[params]
+

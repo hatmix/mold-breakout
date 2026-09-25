@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://u40wlthv5yku"
+path="res://.godot/imported/mold_oit_adaptive_voxel_clear_volume.glsl-a98dabf7d44376a65fac739a5d1bf1d3.res"
+
+[deps]
+
+source_file="res://addons/mold/oit/shaders/mold_oit_adaptive_voxel_clear_volume.glsl"
+dest_files=["res://.godot/imported/mold_oit_adaptive_voxel_clear_volume.glsl-a98dabf7d44376a65fac739a5d1bf1d3.res"]
+
+[params]
+

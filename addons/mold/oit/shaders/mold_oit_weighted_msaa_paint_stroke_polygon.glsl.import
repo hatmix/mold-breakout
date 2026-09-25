@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://tjjsvfar2kww"
+path="res://.godot/imported/mold_oit_weighted_msaa_paint_stroke_polygon.glsl-9a8f542199c1e888333665a9b8124aba.res"
+
+[deps]
+
+source_file="res://addons/mold/oit/shaders/mold_oit_weighted_msaa_paint_stroke_polygon.glsl"
+dest_files=["res://.godot/imported/mold_oit_weighted_msaa_paint_stroke_polygon.glsl-9a8f542199c1e888333665a9b8124aba.res"]
+
+[params]
+

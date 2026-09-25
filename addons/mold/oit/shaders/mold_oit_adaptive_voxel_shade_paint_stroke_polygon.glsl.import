@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://c8a3gr2yh10ja"
+path="res://.godot/imported/mold_oit_adaptive_voxel_shade_paint_stroke_polygon.glsl-45d6a1c2ee9d5d35bf8523bc117fc349.res"
+
+[deps]
+
+source_file="res://addons/mold/oit/shaders/mold_oit_adaptive_voxel_shade_paint_stroke_polygon.glsl"
+dest_files=["res://.godot/imported/mold_oit_adaptive_voxel_shade_paint_stroke_polygon.glsl-45d6a1c2ee9d5d35bf8523bc117fc349.res"]
+
+[params]
+

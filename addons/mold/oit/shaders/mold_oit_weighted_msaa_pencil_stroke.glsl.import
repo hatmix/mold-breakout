@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://dhackim7tkaq0"
+path="res://.godot/imported/mold_oit_weighted_msaa_pencil_stroke.glsl-1a8e160f1b52f21c062d1cc433ff9ab5.res"
+
+[deps]
+
+source_file="res://addons/mold/oit/shaders/mold_oit_weighted_msaa_pencil_stroke.glsl"
+dest_files=["res://.godot/imported/mold_oit_weighted_msaa_pencil_stroke.glsl-1a8e160f1b52f21c062d1cc433ff9ab5.res"]
+
+[params]
+
