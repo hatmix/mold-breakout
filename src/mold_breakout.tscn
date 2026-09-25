@@ -1,0 +1,233 @@
+[gd_scene format=3 uid="uid://c30exq8rhfqs0"]
+
+[ext_resource type="Script" uid="uid://drqkbryhx0e3q" path="res://src/mold_breakout.gd" id="1_lcqhv"]
+[ext_resource type="Script" uid="uid://r27bsepywibt" path="res://src/paddle.gd" id="1_s6bdy"]
+[ext_resource type="PackedScene" uid="uid://dwdnn46ufrpso" path="res://src/brick.tscn" id="2_1v4hn"]
+[ext_resource type="PackedScene" uid="uid://wiomhd7h4hot" path="res://src/ball.tscn" id="3_jyvwb"]
+[ext_resource type="Script" uid="uid://3ckjtkqvqorp" path="res://addons/mold/authoring/mold_node_3d.gd" id="3_s6bdy"]
+[ext_resource type="Script" uid="uid://bvh73wk3m3vbj" path="res://addons/mold/authoring/mold_paint_settings.gd" id="4_1v4hn"]
+[ext_resource type="Script" uid="uid://b3o4l0ini6dpr" path="res://addons/mold/authoring/mold_shape_resource.gd" id="4_lcqhv"]
+[ext_resource type="Script" uid="uid://bqw6t7oyqgmuh" path="res://addons/mold/authoring/mold_pencil_settings.gd" id="5_jyvwb"]
+[ext_resource type="Script" uid="uid://ywxfuv38gx6h" path="res://addons/mold/authoring/mold_appearance_resource.gd" id="6_o7ayh"]
+[ext_resource type="Script" uid="uid://d3yrllyfp33sr" path="res://addons/mold/authoring/mold_style_resource.gd" id="7_of1u2"]
+[ext_resource type="Script" uid="uid://ddgauedhsamt8" path="res://src/lose_area.gd" id="11_jyvwb"]
+[ext_resource type="Script" uid="uid://b4geg1cyvkcxp" path="res://src/pause.gd" id="12_o7ayh"]
+
+[sub_resource type="ColorPalette" id="ColorPalette_jyvwb"]
+colors = PackedColorArray(0.43529412, 0.40392157, 0.4627451, 1, 0.77254903, 0.8, 0.72156864, 1, 0.54509807, 0.33333334, 0.5019608, 1, 0.4, 0.3764706, 0.57254905, 1, 0.7607843, 0.5529412, 0.45882353, 1, 0.40784314, 0.6745098, 0.6627451, 1, 0.33333334, 0.4392157, 0.39215687, 1, 0.21960784, 0.4392157, 0.5019608, 1)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_iws5u"]
+sky_top_color = Color(0, 0, 0, 1)
+sky_horizon_color = Color(0, 0, 0, 1)
+sky_cover_modulate = Color(1, 0.9254902, 0.8392157, 1)
+ground_bottom_color = Color(0, 0, 0, 1)
+ground_horizon_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Sky" id="Sky_s6bdy"]
+sky_material = SubResource("ProceduralSkyMaterial_iws5u")
+
+[sub_resource type="Environment" id="Environment_lcqhv"]
+background_mode = 2
+sky = SubResource("Sky_s6bdy")
+tonemap_mode = 2
+fog_mode = 1
+fog_light_color = Color(0, 0, 0, 1)
+fog_density = 1.0
+fog_height = 3.0
+fog_depth_begin = 2.0
+fog_depth_end = 20.0
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_1v4hn"]
+friction = 0.0
+bounce = 1.1
+
+[sub_resource type="Resource" id="Resource_1v4hn"]
+script = ExtResource("4_lcqhv")
+size_3d = Vector3(1.8, 0.2, 0.5)
+roundness = 1.0
+
+[sub_resource type="Resource" id="Resource_s6bdy"]
+script = ExtResource("4_1v4hn")
+roughness = 0.38
+dryness = 0.0
+taper = 0.15
+loading = 0.0
+
+[sub_resource type="Resource" id="Resource_lcqhv"]
+script = ExtResource("5_jyvwb")
+pressure = 0.55
+softness = 0.05
+roughness = 0.08
+
+[sub_resource type="Resource" id="Resource_jyvwb"]
+script = ExtResource("6_o7ayh")
+paint = SubResource("Resource_s6bdy")
+pencil = SubResource("Resource_lcqhv")
+
+[sub_resource type="Resource" id="Resource_o7ayh"]
+script = ExtResource("7_of1u2")
+gradient_direction = Vector3(0, -1, 0)
+appearance = SubResource("Resource_jyvwb")
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_lcqhv"]
+friction = 0.0
+bounce = 1.1
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_1v4hn"]
+plane = Plane(1, 0, 0, 0)
+
+[sub_resource type="Resource" id="Resource_akhf5"]
+script = ExtResource("4_lcqhv")
+size_3d = Vector3(0.1, 20, 0.1)
+
+[sub_resource type="Resource" id="Resource_kflcg"]
+script = ExtResource("4_1v4hn")
+roughness = 0.38
+dryness = 0.0
+taper = 0.15
+loading = 0.0
+
+[sub_resource type="Resource" id="Resource_d0ib5"]
+script = ExtResource("5_jyvwb")
+pressure = 0.55
+softness = 0.05
+roughness = 0.08
+
+[sub_resource type="Resource" id="Resource_ryk7j"]
+script = ExtResource("6_o7ayh")
+paint = SubResource("Resource_kflcg")
+pencil = SubResource("Resource_d0ib5")
+
+[sub_resource type="Resource" id="Resource_a44qu"]
+script = ExtResource("7_of1u2")
+secondary_color = Color(1, 0.9254902, 0.8392157, 1)
+gradient_direction = Vector3(1, 0, 0)
+appearance = SubResource("Resource_ryk7j")
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_jyvwb"]
+plane = Plane(-1, 0, 0, 0)
+
+[sub_resource type="Resource" id="Resource_02hon"]
+script = ExtResource("4_lcqhv")
+size_3d = Vector3(0.1, 20, 0.1)
+
+[sub_resource type="Resource" id="Resource_of1u2"]
+script = ExtResource("7_of1u2")
+secondary_color = Color(1, 0.9254902, 0.8392157, 1)
+gradient_direction = Vector3(-1, 0, 0)
+appearance = SubResource("Resource_ryk7j")
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_o7ayh"]
+plane = Plane(0, -1, 0, 0)
+
+[sub_resource type="Resource" id="Resource_cmmrp"]
+script = ExtResource("4_lcqhv")
+size_3d = Vector3(8.5, 0.1, 0.1)
+
+[sub_resource type="Resource" id="Resource_tuqxf"]
+script = ExtResource("4_1v4hn")
+roughness = 0.38
+dryness = 0.0
+taper = 0.15
+loading = 0.0
+
+[sub_resource type="Resource" id="Resource_sjck4"]
+script = ExtResource("5_jyvwb")
+pressure = 0.55
+softness = 0.05
+roughness = 0.08
+
+[sub_resource type="Resource" id="Resource_qmknx"]
+script = ExtResource("6_o7ayh")
+paint = SubResource("Resource_tuqxf")
+pencil = SubResource("Resource_sjck4")
+
+[sub_resource type="Resource" id="Resource_yr6bq"]
+script = ExtResource("7_of1u2")
+secondary_color = Color(1, 0.9254902, 0.8392157, 1)
+appearance = SubResource("Resource_qmknx")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gbcqf"]
+size = Vector3(8.5, 4, 1)
+
+[node name="MoldBreakout" type="Node3D" unique_id=905675167]
+script = ExtResource("1_lcqhv")
+brick_scene = ExtResource("2_1v4hn")
+ball_scene = ExtResource("3_jyvwb")
+color_palette = SubResource("ColorPalette_jyvwb")
+
+[node name="Pause" type="Node" parent="." unique_id=1172724489]
+process_mode = 3
+script = ExtResource("12_o7ayh")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1648108085]
+environment = SubResource("Environment_lcqhv")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1112957948]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 10)
+size = 15.5
+
+[node name="Paddle" type="AnimatableBody3D" parent="." unique_id=2081724348]
+unique_name_in_owner = true
+axis_lock_linear_y = true
+axis_lock_linear_z = true
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+axis_lock_angular_z = true
+physics_material_override = SubResource("PhysicsMaterial_1v4hn")
+script = ExtResource("1_s6bdy")
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="Paddle" unique_id=627321359]
+depth = 1.2
+polygon = PackedVector2Array(-1, 0, -0.9, 0.05, -0.2, 0.135, 0.2, 0.135, 0.9, 0.05, 1, 0, 1, -0.1, -1, -0.1)
+
+[node name="MoldNode3D" type="Node3D" parent="Paddle" unique_id=760460223]
+script = ExtResource("3_s6bdy")
+shape = SubResource("Resource_1v4hn")
+style = SubResource("Resource_o7ayh")
+metadata/_custom_type_script = "uid://3ckjtkqvqorp"
+
+[node name="Walls" type="StaticBody3D" parent="." unique_id=126235413]
+physics_material_override = SubResource("PhysicsMaterial_lcqhv")
+
+[node name="Left" type="CollisionShape3D" parent="Walls" unique_id=1228053604]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.25, 4, 0)
+shape = SubResource("WorldBoundaryShape3D_1v4hn")
+
+[node name="MoldNode3D" type="Node3D" parent="Walls/Left" unique_id=8638445]
+script = ExtResource("3_s6bdy")
+shape = SubResource("Resource_akhf5")
+style = SubResource("Resource_a44qu")
+metadata/_custom_type_script = "uid://3ckjtkqvqorp"
+
+[node name="Right" type="CollisionShape3D" parent="Walls" unique_id=1455648770]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.25, 4, 0)
+shape = SubResource("WorldBoundaryShape3D_jyvwb")
+
+[node name="MoldNode3D" type="Node3D" parent="Walls/Right" unique_id=140146683]
+script = ExtResource("3_s6bdy")
+shape = SubResource("Resource_02hon")
+style = SubResource("Resource_of1u2")
+metadata/_custom_type_script = "uid://3ckjtkqvqorp"
+
+[node name="Top" type="CollisionShape3D" parent="Walls" unique_id=400342613]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.7, 0)
+shape = SubResource("WorldBoundaryShape3D_o7ayh")
+
+[node name="MoldNode3D" type="Node3D" parent="Walls/Top" unique_id=1480418088]
+script = ExtResource("3_s6bdy")
+shape = SubResource("Resource_cmmrp")
+style = SubResource("Resource_yr6bq")
+metadata/_custom_type_script = "uid://3ckjtkqvqorp"
+
+[node name="LoseArea" type="Area3D" parent="." unique_id=2079185720]
+unique_name_in_owner = true
+script = ExtResource("11_jyvwb")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LoseArea" unique_id=1133020492]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.6357894, 0)
+shape = SubResource("BoxShape3D_gbcqf")
+
+[node name="Bricks" type="Node3D" parent="." unique_id=976490312]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)

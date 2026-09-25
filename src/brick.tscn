@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://dwdnn46ufrpso"]
+
+[ext_resource type="Script" uid="uid://y3wd8gc268ts" path="res://src/brick.gd" id="1_g2uyb"]
+[ext_resource type="Script" uid="uid://3ckjtkqvqorp" path="res://addons/mold/authoring/mold_node_3d.gd" id="2_8nckf"]
+[ext_resource type="Script" uid="uid://b3o4l0ini6dpr" path="res://addons/mold/authoring/mold_shape_resource.gd" id="3_fyev1"]
+[ext_resource type="Script" uid="uid://bvh73wk3m3vbj" path="res://addons/mold/authoring/mold_paint_settings.gd" id="4_1mkf5"]
+[ext_resource type="Script" uid="uid://bqw6t7oyqgmuh" path="res://addons/mold/authoring/mold_pencil_settings.gd" id="5_cwuob"]
+[ext_resource type="Script" uid="uid://ywxfuv38gx6h" path="res://addons/mold/authoring/mold_appearance_resource.gd" id="6_biaqc"]
+[ext_resource type="Script" uid="uid://d3yrllyfp33sr" path="res://addons/mold/authoring/mold_style_resource.gd" id="7_skmdn"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_jyvwb"]
+friction = 0.0
+bounce = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g2uyb"]
+size = Vector3(1, 0.5, 0.5)
+
+[sub_resource type="Resource" id="Resource_g2uyb"]
+resource_local_to_scene = true
+script = ExtResource("3_fyev1")
+size_3d = Vector3(0.9, 0.4, 0.4)
+roundness = 1.0
+
+[sub_resource type="Resource" id="Resource_02122"]
+script = ExtResource("4_1mkf5")
+roughness = 0.38
+dryness = 0.0
+taper = 0.15
+loading = 0.0
+
+[sub_resource type="Resource" id="Resource_xv8wa"]
+script = ExtResource("5_cwuob")
+pressure = 0.55
+softness = 0.05
+roughness = 0.08
+
+[sub_resource type="Resource" id="Resource_h2p2p"]
+script = ExtResource("6_biaqc")
+paint = SubResource("Resource_02122")
+pencil = SubResource("Resource_xv8wa")
+
+[sub_resource type="Resource" id="Resource_vkx2b"]
+resource_local_to_scene = true
+script = ExtResource("7_skmdn")
+secondary_color = Color(0, 0, 0, 1)
+color_mode = 1
+gradient_direction = Vector3(0, -1, 0)
+emission_strength = 1.0
+appearance = SubResource("Resource_h2p2p")
+
+[sub_resource type="Resource" id="Resource_1mkf5"]
+script = ExtResource("3_fyev1")
+size_3d = Vector3(1, 0.5, 0.5)
+roundness = 1.0
+
+[sub_resource type="Resource" id="Resource_cwuob"]
+script = ExtResource("4_1mkf5")
+roughness = 0.38
+dryness = 0.0
+taper = 0.15
+loading = 0.0
+
+[sub_resource type="Resource" id="Resource_biaqc"]
+script = ExtResource("5_cwuob")
+pressure = 0.55
+softness = 0.05
+roughness = 0.08
+
+[sub_resource type="Resource" id="Resource_imsi4"]
+script = ExtResource("6_biaqc")
+paint = SubResource("Resource_cwuob")
+pencil = SubResource("Resource_biaqc")
+
+[sub_resource type="Resource" id="Resource_72n5c"]
+resource_local_to_scene = true
+script = ExtResource("7_skmdn")
+color = Color(0, 0, 0, 1)
+secondary_color = Color(0, 0, 0, 1)
+gradient_direction = Vector3(0, -1, 0)
+emission_strength = 1.0
+appearance = SubResource("Resource_imsi4")
+
+[node name="Brick" type="StaticBody3D" unique_id=622291842]
+physics_material_override = SubResource("PhysicsMaterial_jyvwb")
+script = ExtResource("1_g2uyb")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=581548818]
+shape = SubResource("BoxShape3D_g2uyb")
+
+[node name="MoldNode3D" type="Node3D" parent="." unique_id=793921706]
+unique_name_in_owner = true
+script = ExtResource("2_8nckf")
+shape = SubResource("Resource_g2uyb")
+style = SubResource("Resource_vkx2b")
+metadata/_custom_type_script = "uid://3ckjtkqvqorp"
+
+[node name="MoldNode3DHull" type="Node3D" parent="." unique_id=1531738976]
+unique_name_in_owner = true
+script = ExtResource("2_8nckf")
+shape = SubResource("Resource_1mkf5")
+style = SubResource("Resource_72n5c")
+face_cull = 2
+metadata/_custom_type_script = "uid://3ckjtkqvqorp"
